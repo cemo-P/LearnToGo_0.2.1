@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true"
+        android:visible="true">
+        <item
+            android:id="@+id/nav_mathe"
+            android:icon="@drawable/ic_baseline_exposure_plus_1_24px"
+            android:title="Mathe" />
+        <item
+            android:id="@+id/nav_kartei"
+            android:icon="@drawable/ic_baseline_exposure_plus_1_24px"
+            android:title="Kartei Karten" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_baseline_exposure_plus_1_24px"
+            android:title="Einstellungen" />
+
+    </group>
+
+</menu>
