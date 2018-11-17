@@ -47,7 +47,7 @@ public class MatheFragment extends Fragment implements View.OnClickListener {
             }
         }
         else {
-            Toast.makeText(getActivity(),"Wählen Sie eine Rechenart", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(),"Wählen Sie mindestens eine der vier Rechenarten aus", Toast.LENGTH_LONG).show();
         }
 
     }
