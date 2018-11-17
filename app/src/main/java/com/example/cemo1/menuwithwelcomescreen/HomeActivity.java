@@ -46,6 +46,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R. id. nav_setting:
                 getSupportFragmentManager().beginTransaction().replace(R. id. fragment_container, new SettingFragment()).commit();
                 break;
+            case R. id. nav_statistik:
+                getSupportFragmentManager().beginTransaction().replace(R. id. fragment_container, new StatistikFragment()).commit();
+                break;
         }
         schublade.closeDrawer(GravityCompat.START);
         return true;
