@@ -14,7 +14,7 @@
         <item
             android:id="@+id/nav_kartei"
             android:icon="@drawable/ic_baseline_exposure_plus_1_24px"
-            android:title="Kartei Karten" />
+            android:title="Karteikarten" />
         <item
             android:id="@+id/nav_setting"
             android:icon="@drawable/ic_baseline_exposure_plus_1_24px"
