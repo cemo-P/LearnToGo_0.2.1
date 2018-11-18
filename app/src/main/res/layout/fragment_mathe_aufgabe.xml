@@ -96,24 +96,6 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etZeit"
-        android:layout_width="109dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="117dp"
-        android:layout_marginRight="117dp"
-        android:layout_toEndOf="@+id/swAnAus"
-        android:layout_toRightOf="@+id/swAnAus"
-        android:ems="10"
-        android:inputType="time"
-        android:text="00:00" />
-
-    <EditText
         android:id="@+id/etErgebnis"
         android:layout_width="136dp"
         android:layout_height="wrap_content"
@@ -128,5 +110,37 @@
         android:hint="Ergebnis : 0"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvP"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="262dp"
+        android:layout_marginLeft="262dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:text="START" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/swAnAus"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:layout_toEndOf="@+id/swAnAus"
+        android:layout_toRightOf="@+id/swAnAus" />
 
 </RelativeLayout>

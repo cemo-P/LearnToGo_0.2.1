@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MatheFragment extends Fragment implements View.OnClickListener {
@@ -17,8 +18,8 @@ public class MatheFragment extends Fragment implements View.OnClickListener {
     View view;
     public Button LOS;
     public CheckBox addit,multip,subtra,divis;
-
-    public static int a=1,b=10;
+    public EditText etOG, etUG, etTime,etAnzahlAufgabe;
+    public int a=10,b=1;
 
     @Nullable
     @Override
@@ -29,6 +30,15 @@ public class MatheFragment extends Fragment implements View.OnClickListener {
                multip = view.findViewById(R.id.cbMultiplikation);
                subtra = view.findViewById(R.id.cbSubtraktion);
                divis = view.findViewById(R.id.cbDivision);
+               etOG = view.findViewById(R.id.etEnde);
+               etUG = view.findViewById(R.id.etAnfang);
+               etTime = view.findViewById(R.id. etSkeingabe);
+               etAnzahlAufgabe = view.findViewById(R.id.etAufgAnzahl);
+            String u1 = String.valueOf(b);
+            String u2 = String.valueOf(a);
+            etUG.setText(u1);
+            etOG.setText(u2);
+
 
                LOS.setOnClickListener(this);
 
@@ -39,6 +49,7 @@ public class MatheFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+
         if(multip.isChecked() || divis.isChecked()||addit.isChecked()||subtra.isChecked()) {
             switch (v.getId()) {
                 case R.id.btnMatlos:

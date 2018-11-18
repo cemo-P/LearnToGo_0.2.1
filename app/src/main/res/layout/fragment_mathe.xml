@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal">
@@ -15,6 +16,20 @@
         android:layout_marginLeft="12dp"
         android:layout_marginTop="80dp"
         android:text="Gewünschte Bearbeitungszeit:"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAufgaanz"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="134dp"
+        android:text="Anzahl der Aufgaben :"
         android:textSize="15dp"
         android:textStyle="bold" />
 
@@ -90,9 +105,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="93dp"
-        android:layout_marginLeft="93dp"
-        android:layout_marginTop="225dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="220dp"
         android:text="Obere Grenzwert"
         android:textSize="15dp"
         android:textStyle="bold" />
@@ -104,21 +119,34 @@
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="34dp"
         android:text="Untere Grenzwert"
         android:textSize="15dp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etAnfang"
+        android:id="@+id/etEnde"
         android:layout_width="92dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="202dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etAufgAnzahl"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="358dp"
         android:layout_marginEnd="66dp"
         android:layout_marginRight="66dp"
         android:ems="10"
@@ -138,7 +166,7 @@
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/etEnde"
+        android:id="@+id/etAnfang"
         android:layout_width="92dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -147,7 +175,8 @@
         android:layout_marginEnd="66dp"
         android:layout_marginRight="66dp"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:text=""/>
 
     <Button
         android:id="@+id/btnMatlos"
@@ -160,7 +189,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="265dp"
         android:layout_marginLeft="265dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="173dp"
         android:layout_marginEnd="31dp"
         android:layout_marginRight="31dp"
         android:layout_marginBottom="122dp"
