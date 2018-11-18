@@ -1,6 +1,5 @@
 package com.example.cemo1.menuwithwelcomescreen;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -18,18 +17,21 @@ public class MatheFragment extends Fragment implements View.OnClickListener {
     View view;
     public Button LOS;
     public CheckBox addit,multip,subtra,divis;
-    private Boolean isChecked;
 
-    //@Nullable
+    public static int a=1,b=10;
+
+    @Nullable
     @Override
-    public View onCreateView( LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container,@NonNull Bundle savedInstanceState) {
                view = inflater.inflate(R.layout. fragment_mathe, container, false);
                LOS = view.findViewById(R.id. btnMatlos);
                addit = view.findViewById(R.id.cbAddition);
                multip = view.findViewById(R.id.cbMultiplikation);
                subtra = view.findViewById(R.id.cbSubtraktion);
                divis = view.findViewById(R.id.cbDivision);
+
                LOS.setOnClickListener(this);
+
 
                return view;
 

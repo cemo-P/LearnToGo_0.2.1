@@ -125,7 +125,7 @@
         android:layout_marginTop="243dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Ergebnis : 0"
+        android:hint="Ergebnis : 0"
         android:textSize="18sp"
         android:textStyle="bold" />
 
