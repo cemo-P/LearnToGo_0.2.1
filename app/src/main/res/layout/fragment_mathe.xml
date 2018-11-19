@@ -176,10 +176,27 @@
         android:layout_marginRight="66dp"
         android:ems="10"
         android:inputType="number"
-        android:text=""/>
+        />
 
     <Button
         android:id="@+id/btnMatlos"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEnde"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="287dp"
+        android:layout_marginLeft="287dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="122dp"
+        android:text="LOS" />
+
+    <Button
+        android:id="@+id/btnUbernehmen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etEnde"
@@ -187,15 +204,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="265dp"
-        android:layout_marginLeft="265dp"
-        android:layout_marginTop="173dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginRight="121dp"
         android:layout_marginBottom="122dp"
-        android:text="LOS" />
-
-
+        android:text="ÜBERNEHMEN" />
 
 
 </RelativeLayout>

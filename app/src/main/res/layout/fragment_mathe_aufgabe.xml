@@ -141,6 +141,7 @@
         android:layout_marginEnd="163dp"
         android:layout_marginRight="163dp"
         android:layout_toEndOf="@+id/swAnAus"
-        android:layout_toRightOf="@+id/swAnAus" />
+        android:layout_toRightOf="@+id/swAnAus"
+        android:text="00:00" />
 
 </RelativeLayout>
