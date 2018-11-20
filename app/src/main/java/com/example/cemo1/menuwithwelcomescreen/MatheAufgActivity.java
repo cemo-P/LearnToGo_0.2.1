@@ -56,8 +56,8 @@ public class MatheAufgActivity extends AppCompatActivity implements NavigationVi
         return true;
     }
 
-    @Override
+   /* @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
-    }
+    }*/
 }
