@@ -19,6 +19,18 @@
         <activity
             android:name=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MatheActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KarteActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StatistikActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

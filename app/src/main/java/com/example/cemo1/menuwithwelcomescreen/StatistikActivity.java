@@ -1,78 +1,76 @@
 package com.example.cemo1.menuwithwelcomescreen;
 
-
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.TextView;
 
-
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-    private DrawerLayout schublade;
-
+public class StatistikActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+    private DrawerLayout schublade1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-
-        Toolbar toolbar = findViewById(R.id.toolbar); //üc cizgili Menuyu gosterir
-        schublade = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        setContentView(R.layout.activity_statistik);
+        Toolbar toolbar = findViewById(R.id. toolbar); //üc cizgili Menuyu gosterir
+        schublade1 = findViewById(R.id.statistik);
+        NavigationView navigationView = findViewById(R.id. nav_view );
         navigationView.setNavigationItemSelectedListener(this);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, schublade, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        schublade.addDrawerListener(toggle);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, schublade1,toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        schublade1.addDrawerListener(toggle);
         toggle.syncState();
 
-        /*if(savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().replace(R. id. fragment_container, new MatheFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_mathe);
-        }*/
-    }
 
+    }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-        switch (menuItem.getItemId()) {
-            case R.id.nav_mathe:
-                Intent mathe = new Intent(this, MatheActivity.class);
+        switch (menuItem.getItemId()){
+            case R. id. nav_mathe:
+                Intent mathe = new Intent(this,MatheActivity.class);
                 startActivity(mathe);
                 //getSupportFragmentManager().beginTransaction().replace(R. id. fragment_container, new MatheFragment()).commit();
                 break;
-            case R.id.nav_kartei:
-                Intent karte = new Intent(this, KarteActivity.class);
+            case R. id. nav_kartei:
+                Intent karte = new Intent(this,KarteActivity.class);
                 startActivity(karte);
                 //getSupportFragmentManager().beginTransaction().replace(R. id. fragment_container, new KarteiFragment()).commit();
                 break;
-            case R.id.nav_setting:
-                Intent m2 = new Intent(this, SettingActivity.class);
+            case R. id. nav_setting:
+                Intent m2 = new Intent(this,SettingActivity.class);
                 startActivity(m2);
                 //getSupportFragmentManager().beginTransaction().replace(R. id. fragment_container, new SettingFragment()).commit();
                 break;
-            case R.id.nav_statistik:
+            case R. id. nav_statistik:
                 Intent stati = new Intent(this, StatistikActivity.class);
                 startActivity(stati);
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new StatistikFragment()).commit();
+                // getSupportFragmentManager().beginTransaction().replace(R. id. fragment_container, new StatistikFragment()).commit();
                 break;
         }
-        schublade.closeDrawer(GravityCompat.START);
+        schublade1.closeDrawer(GravityCompat.START);
         return true;
     }
 
     @Override
     public void onBackPressed() {
-        if (schublade.isDrawerOpen(GravityCompat.START)) {
-            schublade.closeDrawer(GravityCompat.START);
+        if(schublade1.isDrawerOpen(GravityCompat.START)){
+            schublade1.closeDrawer(GravityCompat.START);
 
-        } else {
+        }
+        else {
             super.onBackPressed();
         }
     }
 
 
+    /*@Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }*/
 }
