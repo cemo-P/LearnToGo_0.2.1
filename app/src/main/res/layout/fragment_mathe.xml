@@ -7,7 +7,7 @@
 
 
 
-    <CheckBox
+   <!-- <CheckBox
         android:id="@+id/cbAddition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
         android:text="Division"
         android:textSize="20dp"
         android:textStyle="bold" />
-
+-->
 
     <Button
         android:id="@+id/btnMatlos"

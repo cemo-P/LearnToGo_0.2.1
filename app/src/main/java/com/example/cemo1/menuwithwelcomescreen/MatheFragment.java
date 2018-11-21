@@ -35,18 +35,18 @@ public class MatheFragment extends Fragment implements View.OnClickListener {
                LOS = view.findViewById(R.id. btnMatlos);
 
 
-               addit = view.findViewById(R.id.cbAddition);
+            /*   addit = view.findViewById(R.id.cbAddition);
                multip = view.findViewById(R.id.cbMultiplikation);
                subtra = view.findViewById(R.id.cbSubtraktion);
                divis = view.findViewById(R.id.cbDivision);
-
+*/
                LOS.setOnClickListener(this);
 
 
                return view;
 
     }
-    public void ischeck(){
+   /* public void ischeck(){
         if(addit.isChecked()){
             operanden.add("+");
         }else if (!addit.isChecked()){
@@ -65,12 +65,12 @@ public class MatheFragment extends Fragment implements View.OnClickListener {
             operanden.remove("/");
         }
 
-    }
+    }*/
 
     @Override
     public void onClick(View v) {
 
-        if(multip.isChecked() || divis.isChecked()||addit.isChecked()||subtra.isChecked()) {
+       /* if(multip.isChecked() || divis.isChecked()||addit.isChecked()||subtra.isChecked()) {
 
             switch (v.getId()) {
 
@@ -86,7 +86,7 @@ public class MatheFragment extends Fragment implements View.OnClickListener {
         }
         else {
             Toast.makeText(getActivity(),"Wählen Sie mindestens eine der vier Rechenarten aus", Toast.LENGTH_LONG).show();
-        }
+        }*/
 
     }
 }
