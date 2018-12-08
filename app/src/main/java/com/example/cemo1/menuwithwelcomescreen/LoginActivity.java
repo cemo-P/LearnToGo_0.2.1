@@ -58,13 +58,11 @@ public class LoginActivity extends AppCompatActivity {
 
                             if(success){
                                 String name = jsonResponse.getString("name");
-                                int age = jsonResponse.getInt("age");
 
                                 // um Daten an MainActivity weiterzugeben
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 intent.putExtra("name", name);
                                 intent.putExtra("username", username);
-                                intent.putExtra("age", age);
                                 LoginActivity.this.startActivity(intent);
                             }else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);

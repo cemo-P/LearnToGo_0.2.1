@@ -23,11 +23,6 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         // sagt dem java file mit welchen xml file es arbeiten soll
 
-        // anbinden Elemente innerhalb von activtiy_register
-        final EditText etAge = (EditText) findViewById(R.id.etAge);
-        // schau in activtiy_register und mache daraus ein Edit Text
-        // mit der Referenz auf ID etAge
-        // final = einzige Wertzuweisung an etAge
 
         final EditText etName = (EditText) findViewById(R.id.etName);
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
@@ -44,9 +39,6 @@ public class RegisterActivity extends AppCompatActivity {
                 // warum? siehe RegisterRequest
                 final String username = etUsername.getText().toString();
                 final String password = etPassword.getText().toString();
-                // wegen alter int final int
-                // nimmt age konvertiert es zu int Integer.parseInt
-                final int age = Integer.parseInt(etAge.getText().toString());
 
                 // alles hier passiert wenn die Antwort kommt
                 Response.Listener<String> responseListener = new Response.Listener<String>(){
@@ -69,10 +61,10 @@ public class RegisterActivity extends AppCompatActivity {
                                 // falls Fehlgeschlagen
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 builder.setMessage("Registrierung Fehlgeschlagen")
-                                .setNegativeButton("Nochmal", null)
+                                        .setNegativeButton("Nochmal", null)
                                         // wenn User auf Nochmal klickt darf er wieder Registrierung versuchen
-                                .create()
-                                .show();
+                                        .create()
+                                        .show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -84,7 +76,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 // Kreieren Registrierungsanfrage was wollen wir bei Registrierung ? name username ...
                 // RegisterRequest
-                RegisterRequest registerRequest = new RegisterRequest(name, username, age, password, responseListener);
+                RegisterRequest registerRequest = new RegisterRequest(name, username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 // müssen Registrierungsanfrage der Warteschlange hinzufügen
                 queue.add(registerRequest);

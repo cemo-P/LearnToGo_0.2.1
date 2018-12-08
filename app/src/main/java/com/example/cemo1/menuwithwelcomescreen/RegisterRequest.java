@@ -18,19 +18,18 @@ public class RegisterRequest extends StringRequest {
     // brauchen Konstruktor
     // Parameter für einen Namen, Nutzernamen, Passwort
     // Wenn ein Element dieser Klasse kreiert wird werden alle diese Daten an Konstruktor gegeben
-    public RegisterRequest(String name, String username, int age, String password, Response.Listener<String> listener) {
+    public RegisterRequest(String name, String username, String password, Response.Listener<String> listener) {
         super(Method.POST, REGISTER_REQUEST_URL, listener, null);
         // sende Daten an Register.php
         // und bekommen anschließend dann Antwort von Register.php
         // nutzen dabei volley Paket als Anfrage
-    params = new HashMap<>();
-    // kreiert HashMap
+        params = new HashMap<>();
+        // kreiert HashMap
         // geben Parameterdaten in Hashmap
         // schauen auf Register.php
-    params.put("name", name);
-    params.put("username", username);
-    params.put("password", password);
-    params.put("age", age + "");
+        params.put("name", name);
+        params.put("username", username);
+        params.put("password", password);
     }
     // wenn der Request ausgeführt wird
     // wird volley getParams aufrufen
